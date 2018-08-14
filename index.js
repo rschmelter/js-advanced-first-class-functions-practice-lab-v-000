@@ -11,8 +11,14 @@ function logDriversByHometown(drivers, location) {
     if (el.hometown === location) {
       console.log(el.name)
     }
-
   })
+}
+
+function driversByRevenue(drivers) {
+  const sorter = function (num1, num2) {
+    return num1 - num2;
+  }
+  return const driverRevenue = drivers.sort(sorter);
 
 
 }
